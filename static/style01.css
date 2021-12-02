@@ -1,0 +1,32 @@
+body{
+    font-family:sans-serif;
+    display:flex;
+    flex-direction: row;
+}
+.blue{
+    color:blue;
+}
+td{
+    border: 1px solid black;
+    text-align:center;
+    padding:15px;
+}
+.btnSubmit{
+    background-color: #ccc;
+    border-radius:5px;
+    padding:10px;
+    color: blue;
+    border:2px solid blue;
+    font-weight:bold;
+}
+.btnDelete{
+    background-color: #ccc;
+    border-radius:5px;
+    padding:10px;
+    color: red;
+    border:2px solid red;
+    font-weight:bold;
+}
+.spacja{
+    width:100px;
+}

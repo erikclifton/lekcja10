@@ -1,0 +1,49 @@
+<div>
+<form action="/add" method="POST">
+    <table>
+    <tr>
+        <td class="blue">ubezpieczony:</td>
+        <td><input name="check1" type="checkbox"></td>
+    </tr>
+    <tr>
+        <td class="blue">beznyna:</td>
+        <td><input name="check2" type="checkbox"></td>
+    </tr>
+    <tr>
+        <td class="blue">uszkodzony:</td>
+        <td><input name="check3" type="checkbox"></td>
+    </tr>
+    <tr>
+        <td class="blue">napęd 4x4:</td>
+        <td><input name="check4" type="checkbox"></td>
+    </tr>
+</table>
+<input type="submit" class="btnSubmit" id="btnSubmit" value="DODAJ DO BAZY">
+</form>
+</div>
+<div class="spacja"></div>
+<div>
+<table id="tableData">
+    <tr>
+        <td></td>
+        <td class="blue">ubezpieczony</td>
+        <td class="blue">benzyna</td>
+        <td class="blue">uszkodzony</td>
+        <td class="blue">napęd 4x4</td>
+        <td></td>
+        <td></td>
+    </tr>
+    {{#each placki}}
+    <tr>
+        <td></td>
+        <td>{{this.ube}}</td>
+        <td>{{this.ben}}</td>
+        <td>{{this.usz}}</td>
+        <td>{{this.na4}}</td>
+        <td><a class="btnSubmit">edit</a></td>
+        <td><a href="/del?pomidor={{_id}}" class="btnDelete">delete</a></td>
+    </tr>
+        
+    {{/each}}
+</table>
+</div>
